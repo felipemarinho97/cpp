@@ -1,0 +1,40 @@
+# depslib dependency file v1.0
+1499435161 source:/home/felipevm/Documentos/Exercícios/C++/Lab 02/Controle De Alunos/main.cpp
+	<iostream>
+
+1500235041 source:/home/darklyn/workspace/C++/cpp/Lab 03/Controle De Alunos/src/Aluno.cpp
+	"Aluno.h"
+	<string>
+	<iostream>
+
+1500233376 /home/darklyn/workspace/C++/cpp/Lab 03/Controle De Alunos/include/Aluno.h
+	<string>
+
+1500240932 source:/home/darklyn/workspace/C++/cpp/Lab 03/Controle De Alunos/main.cpp
+	<iostream>
+	"controle_de_alunos.h"
+	<exception>
+
+1500238299 source:/home/darklyn/workspace/C++/cpp/Lab 03/Controle De Alunos/src/grupo_de_estudo.cpp
+	"grupo_de_estudo.h"
+	<sstream>
+
+1500238258 /home/darklyn/workspace/C++/cpp/Lab 03/Controle De Alunos/include/grupo_de_estudo.h
+	<string>
+	<unordered_map>
+	"Aluno.h"
+
+1500241411 source:/home/darklyn/workspace/C++/cpp/Lab 03/Controle De Alunos/src/controle_de_alunos.cpp
+	"controle_de_alunos.h"
+	"grupo_de_estudo.h"
+	<string>
+	<iostream>
+	<limits>
+	<stdexcept>
+
+1500241509 /home/darklyn/workspace/C++/cpp/Lab 03/Controle De Alunos/include/controle_de_alunos.h
+	<unordered_map>
+	<map>
+	"Aluno.h"
+	"grupo_de_estudo.h"
+
