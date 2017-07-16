@@ -13,7 +13,7 @@ class Contato
         void set_nome(std::string &nome);
         void set_sobrenome(std::string &sobrenome);
 
-        std::string get_nome(std::string &nome);
+        std::string get_nome();
         std::string get_sobrenome(std::string &sobrenome);
         std::string get_telefone(std::string &telefone);
 

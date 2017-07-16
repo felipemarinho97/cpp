@@ -7,7 +7,7 @@ using namespace std;
 
 char menu() {
     char op;
-    cout << "\n(C)adastrar Contato\n(L)istar Contatos\n(E)xibir Contato\n(S)air\nOpção>\n" << endl;
+    cout << "\n(C)adastrar Contato\n(L)istar Contatos\n(E)xibir Contato\n(S)air\n\nOpção> ";
     cin >> op;
     return op;
 }
@@ -15,18 +15,40 @@ char menu() {
 int main() {
     agenda_de_contatos Agenda;
     char op;
-    op = menu();
-    while (op != 's') {
+    op = 'a';
+    while (op != 'S') {
         op = menu();
         switch (op) {
-            case 'c':
-                Agenda.cadastrar_contato("fulanim", "sicar", "6545", 1);
+            case 'C': {
+                string nome, sobrenome, telefone;
+                int pos;
+                cout << "Posição: ";
+                cin >> pos;
+                cout << "Nome: ";
+                cin >> nome;
+                cout << "Sobrenome: ";
+                cin >> sobrenome;
+                cout << "Telefone: ";
+                cin >> telefone;
+                Agenda.cadastar_contato(nome, sobrenome, telefone, pos);
+                cout << "CADASTRO REALIZADO!" << endl;
                 break;
-            case 'l':
+                }
+            case 'L':
                 Agenda.listar_contatos();
                 break;
-            case 'e':
-                Agenda.exibir_contato();
+            case 'E': {
+                int pos;
+                cout << "Contato> ";
+                cin >> pos;
+                if (pos > 100 || pos < 0) {
+                    cout << "POSIÇÃO INVÁLIDA!";
+                    break;
+                }
+                cout << Agenda.exibir_contato(pos) << endl;
+                break;
+                }
+            case 'S':
                 break;
             default:
                 cout << "OPÇÃO INVÁLIDA" << endl;

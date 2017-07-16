@@ -27,7 +27,7 @@ void Contato::set_telefone(string &telefone){
     this->telefone = telefone;
 };
 
-string Contato::get_nome(string &nome) {
+string Contato::get_nome() {
     return this->nome;
 };
 
@@ -40,5 +40,6 @@ string Contato::get_telefone(std::string &telefone){
 };
 
 string Contato::toString() {
-    return this->nome;
+    string toString = this->nome + " - " + this->telefone;
+    return toString;
 };

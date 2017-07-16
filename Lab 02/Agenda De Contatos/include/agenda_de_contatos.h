@@ -1,8 +1,8 @@
-#include <string.h>
-#include <Contato.h>
 #ifndef AGENDA_DE_CONTATOS_H
 #define AGENDA_DE_CONTATOS_H
 
+#include <string.h>
+#include <Contato.h>
 
 class agenda_de_contatos
 {

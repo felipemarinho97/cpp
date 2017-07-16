@@ -12,7 +12,9 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
+					<Add option="-std=c++14" />
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 			</Target>
 			<Target title="Release">
@@ -22,6 +24,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -32,7 +35,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Contato.h" />
+		<Unit filename="include/agenda_de_contatos.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Contato.cpp" />
+		<Unit filename="src/agenda_de_contatos.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

@@ -1,22 +1,24 @@
 # depslib dependency file v1.0
-1498681147 source:/home/felipevm/Documentos/Exercícios/C++/Lab 02/Agenda De Contatos/main.cpp
+1499278605 source:/home/felipevm/Documentos/Exercícios/C++/Lab 02/Agenda De Contatos/main.cpp
 	<iostream>
 	<string.h>
 	"Contato.h"
 	"agenda_de_contatos.h"
 
-1498680989 /home/felipevm/Documentos/Exercícios/C++/Lab 02/Agenda De Contatos/include/Contato.h
+1499277840 /home/felipevm/Documentos/Exercícios/C++/Lab 02/Agenda De Contatos/include/Contato.h
 	<string>
 
-1498681203 /home/felipevm/Documentos/Exercícios/C++/Lab 02/Agenda De Contatos/include/agenda_de_contatos.h
+1499277187 /home/felipevm/Documentos/Exercícios/C++/Lab 02/Agenda De Contatos/include/agenda_de_contatos.h
 	<string.h>
 	<Contato.h>
 
-1498680423 source:/home/felipevm/Documentos/Exercícios/C++/Lab 02/Agenda De Contatos/src/agenda_de_contatos.cpp
+1499278907 source:/home/felipevm/Documentos/Exercícios/C++/Lab 02/Agenda De Contatos/src/agenda_de_contatos.cpp
 	"agenda_de_contatos.h"
 	<string.h>
+	<iostream>
+	<stddef.h>
 
-1498681039 source:/home/felipevm/Documentos/Exercícios/C++/Lab 02/Agenda De Contatos/src/Contato.cpp
+1499277952 source:/home/felipevm/Documentos/Exercícios/C++/Lab 02/Agenda De Contatos/src/Contato.cpp
 	"Contato.h"
 	<string>
 	<string.h>
