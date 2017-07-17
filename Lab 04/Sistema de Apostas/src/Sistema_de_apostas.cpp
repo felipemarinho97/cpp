@@ -51,9 +51,24 @@ void Sistema_de_apostas::cadastrar_aposta(int &cenario, std::string &apostador,
 int Sistema_de_apostas::valor_total_de_apostas(int &cenario) {
 	return this->cenarios.at(cenario-1)->get_valor_total();
 }
+
 int Sistema_de_apostas::total_de_apostas(int &cenario) {
 	return this->cenarios.at(cenario-1)->get_total_apostas();
 }
+
 std::string Sistema_de_apostas::exibe_apostas(int &cenario) {
 	return this->cenarios.at(cenario-1)->listar_apostas();
+}
+
+void Sistema_de_apostas::fechar_cenario(int &cenario, bool &ocorreu) {
+    int arrecadado = this->cenarios.at(cenario-1)->fechar(ocorreu);
+    caixa += (int) (arrecadado/taxa);
+}
+
+int Sistema_de_apostas::get_caixa_cenario(int &cenario) {
+    return (int)(this->cenarios.at(cenario-1)->get_arrecadado()/taxa);
+}
+
+int Sistema_de_apostas::get_total_rateio_cenario(int &cenario) {
+    return this->cenarios.at(cenario-1)->get_arrecadado();
 }

@@ -25,6 +25,10 @@ class Sistema_de_apostas {
 		int total_de_apostas(int &);
 		std::string exibe_apostas(int &);
 
+		void fechar_cenario(int &, bool&);
+		int get_caixa_cenario(int &);
+		int get_total_rateio_cenario(int &);
+
 
 	private:
 		const double taxa;

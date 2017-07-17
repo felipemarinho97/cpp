@@ -32,7 +32,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="include/Aposta.h" />
+		<Unit filename="include/Cenario.h" />
+		<Unit filename="include/Sistema_de_apostas.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="src/Aposta.cpp" />
+		<Unit filename="src/Cenario.cpp" />
+		<Unit filename="src/Sistema_de_apostas.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

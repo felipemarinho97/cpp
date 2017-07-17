@@ -17,6 +17,7 @@ Cenario::Cenario(string &nome) {
 	this->descricao = nome;
 	this->estado = Cenario::NAO_FINALIZADO;
 	this->valor_total_de_apostas = 0;
+	this->arrecadado = 0;
 }
 
 Cenario::~Cenario() {
@@ -50,4 +51,23 @@ int Cenario::get_valor_total() {
 
 int Cenario::get_total_apostas() {
 	return this->apostas.size();
+}
+
+int Cenario::fechar(bool &ocorreu) {
+    int arrecadado = 0;
+
+    for (int i = 0; i < this->apostas.size(); i++) {
+		if (this->apostas.at(i)->getPrevisao() != ocorreu) {
+            arrecadado += this->apostas.at(i)->getQuantia();
+		}
+	}
+
+	this->estado = Status::FINALIZADO;
+	this->arrecadado = arrecadado;
+
+	return arrecadado;
+}
+
+int Cenario::get_arrecadado() {
+    return this->arrecadado;
 }

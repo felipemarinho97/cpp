@@ -23,11 +23,15 @@ class Cenario {
 		std::string listar_apostas();
 		std::string toString();
 
+		int fechar(bool &);
+		int get_caixa();
+
 	private:
 		std::string descricao;
 		Status estado;
 		std::vector<Aposta*> apostas;
 		int valor_total_de_apostas;
+		int arrecadado;
 
 };
 
